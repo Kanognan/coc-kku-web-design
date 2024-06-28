@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College of Computing</title>
+  <link rel="stylesheet" href="../css/tunn.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--header-start-->
+  <header>
+    <div class="head-for">
+      <div class="for container-nav">
+        <nav class="forall">
+          <ul>
+            <li><a href="for-student.html">นักศึกษา</a><span>|</span></li>
+            <li><a href="for-staff.html">บุคลากร</a><span>|</span></li>
+            <li><a href="for-old.html">ศิษย์เก่า</a><span>|</span></li>
+            <li><a href="for-come.html">ผู้เยี่ยมชม</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container-nav">
+        <div class="header_left">
+          <a class="logo" href="../index.html"><img src="../img/logo.png" alt="logo" width="200px"></a>
+        </div>
+        <div class="header_right">
+          <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+          <input id="menuTrigger" type="checkbox" name="">
+          <nav class="main_nav">
+            <ul>
+              <li><a class="move" href="../index.html">หน้าหลัก</a>
+                <i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="executives-director.html">ผู้บริหารและกรรมการ</a></li>
+                  <li><a href="history.html">ประวัติ</a></li>
+                  <li><a href="staff-personnel.html">บุคลกรและเจ้าหน้าที่</a></li>
+                </ul>
+              </li>
+              <li><a href="#########">การศึกษา</a>
+                <i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="course.html">หลักสูตร</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                      <li><a href="degree-program.html">ปริญญาตรี</a></li>
+                      <li><a href="master-program.html">ปริญญาโท</a></li>
+                      <li><a href="phd-program.html">ปริญญาเอก</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="aca-calendar.html">ปฏิทินการศึกษา</a></li>
+                </ul>
+              </li>
+              <li><a href="############">ข่าวสาร</a>
+                <i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="khowhit.html">ข่าวเด่น</a></li>
+                  <li><a href="khow.html">ข่าวทั่วไป</a></li>
+                  <li><a href="mou.html">ความร่วมมือ MOU</a></li>
+                  <li><a href="vijai.html">งานวิจัย</a></li>
+                  <li><a href="work.html">ข่าวรับสมัครงาน</a></li>
+                </ul>
+              </li>
+              <li><a href="###########">การรับสมัคร</a>
+                <i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="samak-tree.html">การรับสมัครปริญญาตรี</a></li>
+                  <li><a href="samak-to.html">การรับสมัครปริญญาโท</a></li>
+                  <li><a href="samak-ake.html">การรับสมัครปริญญาเอก</a></li>
+                  <li><a href="tun.html">ทุนการศึกษา</a></li>
+                  <li><a href="laorean-tree.html">ค่าเล่าเรียน</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">ติดต่อ</a></li>
+              <li class="tran"><a class="media-first" href="#######"> EN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header-end-->
+
+  <!-- ------------------------------------------------ -->
+
+  <div class="color">
+    <div class="container ">
+      <div class="breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="link-secondary" href="../index.html">หน้าหลัก</a></li>
+            <li class="breadcrumb-item active">การรับสมัคร</li>
+            <li class="breadcrumb-item active" aria-current="page">ทุนการศึกษา</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="name-head">
+      <h2>ปริญญาตรี</h2>
+    </div>
+    <select name="tun" id="choice">
+      <option value="">เลือกประเภททุน</option>
+      <option value="">ทุน ก</option>
+      <option value="">ทุน ข</option>
+      <option value="">ทุน ค</option>
+      <option value="">ทุน ง</option>
+      <option value="">ทุน จ</option>
+    </select>
+    <div class="info-degree">
+      <div class="sec-info-degree">
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img
+              src="https://www.matichon.co.th/wp-content/uploads/2018/10/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%86-%E0%B8%97%E0%B8%B5%E0%B8%A1%E0%B8%A5%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1-2-%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%A8.jpg"
+              alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการรับสมัครนักเรียนทุนผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</b>
+                ทุนการศึกษาตลอดหลักสูตร 4 ปี แก่ผู้ผ่านการคัดเลือกตามโครงการฯ
+                จำนวน 6 ทุน (สาขาวิชาละ 2 ทุน) ทุนการศึกษาประกอบด้วย<br>
+                1. ค่าธรรมเนียมการศึกษาสำหรับนักศึกษาระดับปริญญาตรี <br>
+                2. ค่าใช้จ่ายส่วนตัวรายเดือน เดือนละ 4,000 บาท <br>
+                3. ค่าร่วมกิจกรรมต่างๆของนักศึกษาที่ภาควิชาวิทยาการคอมพิวเตอร์จัดขึ้น หรือภาควิชาฯ อนุมัติ
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 <br>
+                2. เลือกเรียนรายวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ ในระดับมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชาและมีผลการเรียนดี <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">1.
+                เป็นผู้ที่มีผลการเรียนดี<br>
+                1.1 มีผลการเรียนเฉลี่ยสะสม (GPAX) คำนวณจากผลการเรียนชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า
+                2.75 <br>
+                1.2 มีผลการเรียนเฉลี่ยวิชาคณิตศาสตร์ในชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า 2.75 <br>
+                2. เป็นผู้ได้รับรางวัลการแข่งขันในโครงการดังต่อไปนี้และรางวัลที่ได้รับจะต้องไม่เกิน 2 ปี <br>
+                2.1 ได้รับรางวัล (เหรียญ) ในระดับ ดี ถึง ดีเยี่ยม หรือผู้ผ่านรอบ 2
+                ของการสอบแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ สอวน. <br>
+                2.2 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทยระดับนักเรียน <br>
+                2.3 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันงานสัปดาห์วิทยาศาสตร์แห่งชาติคณะวิทยาศาสตร์
+                มหาวิทยาลัยขอนแก่น ดังรายการแข่งขันต่อไปนี้ หรือ
+                การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์
+                การแข่งขันออกแบบพัฒนาเว็บไซต์
+                การแข่งขันพัฒนาหุ่นยนต์
+                การแข่งขันประกวดโครงงานวิทยาศาสตร์ ระดับมัธยมศึกษาตอนปลายสาขาวิทยาการคอมพิวเตอร์<br>
+                2.4 รางวัลจากการแข่งขันด้านวิทยาการคอมพิวเตอร์ เทคโนโลยีสารสนเทศ ภูมิสารสนเทศศาสตร์ และอื่นๆ
+                ตามดุลยพินิจของคณะกรรมการคัดเลือก</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบคำรับรองของผู้บริหารโรงเรียน<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                และติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาชั้นปีที่ 4-5 จำนวน 1 แผ่น (พร้อมรับรองสำเนาถูกต้อง) <br>
+                4. สำเนาบัตรประจำตัวประชาชน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                5. สำเนาทะเบียนบ้าน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                6. ผลงานที่ได้รับรางวัล</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img src="https://iad.kku.ac.th/upload/photo/web/NnhX2cU9.jpg" alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์ (โครงการช้างเผือก)</b>
+                ผู้ที่ได้รับการคัดเลือกเข้าเป็นนักศึกษาในโครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์
+                (โครงการช้างเผือก) ระดับปริญญาตรี จะได้รับค่าใช้จ่ายส่วนตัว ปีละ 60,000 บาท
+                ( หรือ 5,000.- บาท/เดือน ) ค่าหน่วยกิตและค่าธรรมเนียมในการศึกษา (ตามจ่ายจริง) และค่าร่วมกิจกรรมต่างๆ
+                ของนักศึกษาที่ภาควิชาฯ จัดขึ้น
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6<br>
+                2. เลือกเรียนวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชา <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                1. ผู้สมัครเข้าโครงการ ต้องมีคุณสมบัติดังนี้<br>
+                1.1 ได้ระดับคะแนนเฉลี่ยรวมทุกรายวิชาในชั้นมัธยมศึกษาปีที่ 4-5 รวมกันไม่ต่ำกว่า 3.00 <br>
+                1.2 ได้รับระดับคะแนนเฉลี่ยรวมวิชา เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาปีที่
+                4-5 รวมกันไม่ต่ำกว่า 3.25</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบสมัคร<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายมาแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                ติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาปีที่ 4-5 (ปพ.1) จำนวน 1 ชุด (รับรองสำเนา) <br>
+                4. สำเนา รบ.1-ป จำนวน 1 ชุด (รับรองสำเนา) <br>
+                5. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของนักเรียน จำนวน 1 ชุด (รับรองสำเนา) <br>
+                6. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของบิดา มารดา และผู้ปกครอง จำนวน 1 ชุด (รับรองสำเนา)</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="name-head">
+      <h2>ปริญญาโท</h2>
+    </div>
+    <select name="tun" id="choice">
+      <option value="">เลือกประเภททุน</option>
+      <option value="">ทุน ก</option>
+      <option value="">ทุน ข</option>
+      <option value="">ทุน ค</option>
+      <option value="">ทุน ง</option>
+      <option value="">ทุน จ</option>
+    </select>
+    <div class="info-degree">
+      <div class="sec-info-degree">
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img
+              src="https://www.matichon.co.th/wp-content/uploads/2018/10/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%86-%E0%B8%97%E0%B8%B5%E0%B8%A1%E0%B8%A5%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1-2-%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%A8.jpg"
+              alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการรับสมัครนักเรียนทุนผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</b>
+                ทุนการศึกษาตลอดหลักสูตร 4 ปี แก่ผู้ผ่านการคัดเลือกตามโครงการฯ
+                จำนวน 6 ทุน (สาขาวิชาละ 2 ทุน) ทุนการศึกษาประกอบด้วย<br>
+                1. ค่าธรรมเนียมการศึกษาสำหรับนักศึกษาระดับปริญญาตรี <br>
+                2. ค่าใช้จ่ายส่วนตัวรายเดือน เดือนละ 4,000 บาท <br>
+                3. ค่าร่วมกิจกรรมต่างๆของนักศึกษาที่ภาควิชาวิทยาการคอมพิวเตอร์จัดขึ้น หรือภาควิชาฯ อนุมัติ
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 <br>
+                2. เลือกเรียนรายวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ ในระดับมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชาและมีผลการเรียนดี <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">1.
+                เป็นผู้ที่มีผลการเรียนดี<br>
+                1.1 มีผลการเรียนเฉลี่ยสะสม (GPAX) คำนวณจากผลการเรียนชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า
+                2.75 <br>
+                1.2 มีผลการเรียนเฉลี่ยวิชาคณิตศาสตร์ในชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า 2.75 <br>
+                2. เป็นผู้ได้รับรางวัลการแข่งขันในโครงการดังต่อไปนี้และรางวัลที่ได้รับจะต้องไม่เกิน 2 ปี <br>
+                2.1 ได้รับรางวัล (เหรียญ) ในระดับ ดี ถึง ดีเยี่ยม หรือผู้ผ่านรอบ 2
+                ของการสอบแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ สอวน. <br>
+                2.2 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทยระดับนักเรียน <br>
+                2.3 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันงานสัปดาห์วิทยาศาสตร์แห่งชาติคณะวิทยาศาสตร์
+                มหาวิทยาลัยขอนแก่น ดังรายการแข่งขันต่อไปนี้ หรือ
+                การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์
+                การแข่งขันออกแบบพัฒนาเว็บไซต์
+                การแข่งขันพัฒนาหุ่นยนต์
+                การแข่งขันประกวดโครงงานวิทยาศาสตร์ ระดับมัธยมศึกษาตอนปลายสาขาวิทยาการคอมพิวเตอร์<br>
+                2.4 รางวัลจากการแข่งขันด้านวิทยาการคอมพิวเตอร์ เทคโนโลยีสารสนเทศ ภูมิสารสนเทศศาสตร์ และอื่นๆ
+                ตามดุลยพินิจของคณะกรรมการคัดเลือก</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบคำรับรองของผู้บริหารโรงเรียน<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                และติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาชั้นปีที่ 4-5 จำนวน 1 แผ่น (พร้อมรับรองสำเนาถูกต้อง) <br>
+                4. สำเนาบัตรประจำตัวประชาชน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                5. สำเนาทะเบียนบ้าน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                6. ผลงานที่ได้รับรางวัล</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img src="https://iad.kku.ac.th/upload/photo/web/NnhX2cU9.jpg" alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์ (โครงการช้างเผือก)</b>
+                ผู้ที่ได้รับการคัดเลือกเข้าเป็นนักศึกษาในโครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์
+                (โครงการช้างเผือก) ระดับปริญญาตรี จะได้รับค่าใช้จ่ายส่วนตัว ปีละ 60,000 บาท
+                ( หรือ 5,000.- บาท/เดือน ) ค่าหน่วยกิตและค่าธรรมเนียมในการศึกษา (ตามจ่ายจริง) และค่าร่วมกิจกรรมต่างๆ
+                ของนักศึกษาที่ภาควิชาฯ จัดขึ้น
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6<br>
+                2. เลือกเรียนวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชา <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                1. ผู้สมัครเข้าโครงการ ต้องมีคุณสมบัติดังนี้<br>
+                1.1 ได้ระดับคะแนนเฉลี่ยรวมทุกรายวิชาในชั้นมัธยมศึกษาปีที่ 4-5 รวมกันไม่ต่ำกว่า 3.00 <br>
+                1.2 ได้รับระดับคะแนนเฉลี่ยรวมวิชา เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาปีที่
+                4-5 รวมกันไม่ต่ำกว่า 3.25</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบสมัคร<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายมาแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                ติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาปีที่ 4-5 (ปพ.1) จำนวน 1 ชุด (รับรองสำเนา) <br>
+                4. สำเนา รบ.1-ป จำนวน 1 ชุด (รับรองสำเนา) <br>
+                5. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของนักเรียน จำนวน 1 ชุด (รับรองสำเนา) <br>
+                6. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของบิดา มารดา และผู้ปกครอง จำนวน 1 ชุด (รับรองสำเนา)</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="name-head">
+      <h2>ปริญญาเอก</h2>
+    </div>
+    <select name="tun" id="choice">
+      <option value="">เลือกประเภททุน</option>
+      <option value="">ทุน ก</option>
+      <option value="">ทุน ข</option>
+      <option value="">ทุน ค</option>
+      <option value="">ทุน ง</option>
+      <option value="">ทุน จ</option>
+    </select>
+    <div class="info-degree">
+      <div class="sec-info-degree">
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img
+              src="https://www.matichon.co.th/wp-content/uploads/2018/10/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%86-%E0%B8%97%E0%B8%B5%E0%B8%A1%E0%B8%A5%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1-2-%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%8A%E0%B8%99%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%A8.jpg"
+              alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการรับสมัครนักเรียนทุนผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</b>
+                ทุนการศึกษาตลอดหลักสูตร 4 ปี แก่ผู้ผ่านการคัดเลือกตามโครงการฯ
+                จำนวน 6 ทุน (สาขาวิชาละ 2 ทุน) ทุนการศึกษาประกอบด้วย<br>
+                1. ค่าธรรมเนียมการศึกษาสำหรับนักศึกษาระดับปริญญาตรี <br>
+                2. ค่าใช้จ่ายส่วนตัวรายเดือน เดือนละ 4,000 บาท <br>
+                3. ค่าร่วมกิจกรรมต่างๆของนักศึกษาที่ภาควิชาวิทยาการคอมพิวเตอร์จัดขึ้น หรือภาควิชาฯ อนุมัติ
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 <br>
+                2. เลือกเรียนรายวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ ในระดับมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชาและมีผลการเรียนดี <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">1.
+                เป็นผู้ที่มีผลการเรียนดี<br>
+                1.1 มีผลการเรียนเฉลี่ยสะสม (GPAX) คำนวณจากผลการเรียนชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า
+                2.75 <br>
+                1.2 มีผลการเรียนเฉลี่ยวิชาคณิตศาสตร์ในชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า 2.75 <br>
+                2. เป็นผู้ได้รับรางวัลการแข่งขันในโครงการดังต่อไปนี้และรางวัลที่ได้รับจะต้องไม่เกิน 2 ปี <br>
+                2.1 ได้รับรางวัล (เหรียญ) ในระดับ ดี ถึง ดีเยี่ยม หรือผู้ผ่านรอบ 2
+                ของการสอบแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ สอวน. <br>
+                2.2 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทยระดับนักเรียน <br>
+                2.3 ได้รับรางวัลอันดับ 1 ถึง 3 จากการแข่งขันงานสัปดาห์วิทยาศาสตร์แห่งชาติคณะวิทยาศาสตร์
+                มหาวิทยาลัยขอนแก่น ดังรายการแข่งขันต่อไปนี้ หรือ
+                การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์
+                การแข่งขันออกแบบพัฒนาเว็บไซต์
+                การแข่งขันพัฒนาหุ่นยนต์
+                การแข่งขันประกวดโครงงานวิทยาศาสตร์ ระดับมัธยมศึกษาตอนปลายสาขาวิทยาการคอมพิวเตอร์<br>
+                2.4 รางวัลจากการแข่งขันด้านวิทยาการคอมพิวเตอร์ เทคโนโลยีสารสนเทศ ภูมิสารสนเทศศาสตร์ และอื่นๆ
+                ตามดุลยพินิจของคณะกรรมการคัดเลือก</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบคำรับรองของผู้บริหารโรงเรียน<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                และติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาชั้นปีที่ 4-5 จำนวน 1 แผ่น (พร้อมรับรองสำเนาถูกต้อง) <br>
+                4. สำเนาบัตรประจำตัวประชาชน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                5. สำเนาทะเบียนบ้าน (พร้อมรับรองสำเนาถูกต้อง) <br>
+                6. ผลงานที่ได้รับรางวัล</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="sec-info">
+          <div class="div-sec-img">
+            <img src="https://iad.kku.ac.th/upload/photo/web/NnhX2cU9.jpg" alt="">
+          </div>
+          <div class="div-sec-info">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">รายละเอียด</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">คุณสมบัติ</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">เงื่อนไข</button>
+                <button class="nav-link" id="nav-con1-tab" data-bs-toggle="tab" data-bs-target="#nav-con1" type="button"
+                  role="tab" aria-controls="nav-con1" aria-selected="false">หลักฐานการสมัคร</button>
+                <button class="nav-link" id="nav-con2-tab" data-bs-toggle="tab" data-bs-target="#nav-con2" type="button"
+                  role="tab" aria-controls="nav-con2" aria-selected="false">กำหนดการ</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <b>โครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์ (โครงการช้างเผือก)</b>
+                ผู้ที่ได้รับการคัดเลือกเข้าเป็นนักศึกษาในโครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์
+                (โครงการช้างเผือก) ระดับปริญญาตรี จะได้รับค่าใช้จ่ายส่วนตัว ปีละ 60,000 บาท
+                ( หรือ 5,000.- บาท/เดือน ) ค่าหน่วยกิตและค่าธรรมเนียมในการศึกษา (ตามจ่ายจริง) และค่าร่วมกิจกรรมต่างๆ
+                ของนักศึกษาที่ภาควิชาฯ จัดขึ้น
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                1. เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6<br>
+                2. เลือกเรียนวิชาต่อไปนี้คือ เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาตอนปลาย
+                โดยผู้สมัครจะต้องลงทะเบียนเรียนครบทุกรายวิชา <br>
+                3. เป็นผู้มีสัญชาติไทย <br>
+                4. เป็นผู้ไม่มีโรคติดต่อหรือโรคร้ายแรงซึ่งเป็นอุปสรรคต่อการศึกษา <br>
+                5. เป็นผู้มีความขยันหมั่นเพียร มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                1. ผู้สมัครเข้าโครงการ ต้องมีคุณสมบัติดังนี้<br>
+                1.1 ได้ระดับคะแนนเฉลี่ยรวมทุกรายวิชาในชั้นมัธยมศึกษาปีที่ 4-5 รวมกันไม่ต่ำกว่า 3.00 <br>
+                1.2 ได้รับระดับคะแนนเฉลี่ยรวมวิชา เคมี ฟิสิกส์ และคณิตศาสตร์ (โครงสร้าง 2 หรือ 3) ในชั้นมัธยมศึกษาปีที่
+                4-5 รวมกันไม่ต่ำกว่า 3.25</div>
+              <div class="tab-pane fade" id="nav-con1" role="tabpanel" aria-labelledby="nav-con1-tab">
+                1. ใบสมัคร<br>
+                2. รูปถ่ายหน้าตรงไม่สวมหมวก ขนาด 1 นิ้ว ถ่ายมาแล้วไม่เกิน 6 เดือน จำนวน 1 รูป
+                ติดลงในใบสมัครซึ่งกรอกรายละเอียดเรียบร้อยแล้ว <br>
+                3. สำเนาใบแสดงผลการเรียน ชั้นมัธยมศึกษาปีที่ 4-5 (ปพ.1) จำนวน 1 ชุด (รับรองสำเนา) <br>
+                4. สำเนา รบ.1-ป จำนวน 1 ชุด (รับรองสำเนา) <br>
+                5. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของนักเรียน จำนวน 1 ชุด (รับรองสำเนา) <br>
+                6. สำเนาทะเบียนบ้าน และสำเนาบัตรประชาชน ของบิดา มารดา และผู้ปกครอง จำนวน 1 ชุด (รับรองสำเนา)</div>
+              <div class="tab-pane fade" id="nav-con2" role="tabpanel" aria-labelledby="nav-con2-tab">
+                เป็นไปตามประกาศรับสมัคร แต่ละปีการศึกษา</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------------------------------ -->
+  <footer>
+    <div class="mainfoot-content">
+      <div class="left1 footbox">
+        <!-- <h2>About us</h2> -->
+        <div class="content-footer">
+          <h2>วิทยาลัยการคอมพิวเตอร์<br> มหาวิทยาลัยขอนแก่น</h2>
+          <p>
+            123 หมู่ 16 ถ.มิตรภาพ ต.ในเมือง <br>
+            อ.เมือง จ.ขอนแก่น 40002 <br>
+            โทรศัพท์ 043-009700 <br>
+            โทรสาร 043-202216 <br>
+          </p>
+        </div>
+        <div class="social">
+          <a href="#####"><i class="bi bi-envelope-fill"></i></a>
+          <a href="#####"><i class="bi bi-google"></i></a>
+          <a href="#####"><i class="bi bi-instagram"></i></a>
+          <a href="#####"><i class="bi bi-facebook"></i></a>
+          <a href="#####"><i class="bi bi-play-btn-fill"></i></a>
+          <a href="#####"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="center footbox">
+        <div class="content-footer">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <div class="text">
+              <ul>
+                <li><b> >> ข้อมูล</b></li>
+                <ul>
+                  <li><a href="executives-director.html">ผู้บริหารและกรรมการ</a></li>
+                  <li><a href="history.html">ประวัติ</a></li>
+                  <li><a href="staff-personnel.html">บุคลากรและเจ้าหน้าที่</a></li>
+                </ul>
+                <li><b> >> หลักสูตร</b></li>
+                <ul>
+                  <li><a href="degree-program.html">ปริญญาตรี</a></li>
+                  <li><a href="master-program.html">ปริญญาโท</a></li>
+                  <li><a href="phd-program.html">ปริญญาเอก</a></li>
+                </ul>
+                <li><b> >> ปฏิทินการศึกษา</b></li>
+                <ul>
+                  <li><a href="aca-calendar.html">ปฏิทินการศึกษา</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right1 footbox">
+        <div class="content-footer">
+          <div class="text">
+            <ul>
+              <li><b> >> ข่าวสาร</b></li>
+              <ul>
+                <li><a href="khowhit.html">ข่าวเด่น</a></li>
+                <li><a href="khow.html">ข่าวทั่วไป</a></li>
+                <li><a href="mou.html">ความร่วมมือMOU</a></li>
+                <li><a href="vijai.html">งานวิจัย</a></li>
+                <li><a href="work.html">ข่าวรับสมัครงาน</a></li>
+              </ul>
+              <li><b> >> การรับสมัคร</b></li>
+              <ul>
+                <li><a href="samak-tree.html">ปริญญาตรี</a></li>
+                <li><a href="samak-to.html">ปริญญาโท</a></li>
+                <li><a href="samak-ake.html">ปริญญาเอก</a></li>
+                <li><a href="tun.html">ทุนการศึกษา</a></li>
+                <li><a href="laorean-tree.html">ค่าเล่าเรียน</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right1 footbox">
+        <div class="content-footer">
+          <div class="text">
+            <ul>
+              <li><b> >> บริการสำหรับ</b></li>
+              <ul>
+                <li><a href="for-student.html">นักศึกษา</a></li>
+                <li><a href="for-staff.html">บุคลากร</a></li>
+                <li><a href="for-old.html">ศิษย์เก่า</a></li>
+                <li><a href="for-come.html">ผู้เยี่ยมชม</a></li>
+              </ul>
+              <li><b> >> ติดต่อเรา</b></li>
+              <ul>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+              </ul>
+              <li><b> >> คำถามที่พบบ่อย</b></li>
+              <ul>
+                <li><a href="question.html">คำถามที่พบบ่อย</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom">
+    <div class="end">
+      <p>Copyright &copy; 2021 วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น</p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

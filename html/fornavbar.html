@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_nav {
+            font-family: 'Kanit';
+        }
+
+        .forall li {
+            font-family: 'Kanit';
+        }
+
+        .clear {
+            height: auto;
+            width: 100%;
+            /* padding-top: 2em; */
+        }
+
+        .header {
+            padding: 0em 0em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgb(240, 240, 240);
+            /* position: fixed; */
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        header {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .container-nav {
+            max-width: 100em;
+            width: 100%;
+            margin: 0 auto;
+            /* padding: 0 1em; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav_ico {
+            display: block;
+            width: 2.5em;
+            cursor: pointer;
+        }
+
+        .main_nav {
+            float: right;
+        }
+
+        .main_nav ul {
+            margin: 0;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .main_nav ul li {
+            float: left;
+            margin: 0 0 0 5px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            position: relative;
+            z-index: 999;
+        }
+
+        .main_nav ul li a {
+            color: #001A91;
+            display: block;
+            line-height: 1.4;
+            text-decoration: none;
+            padding: 0.37em 1em;
+            transition: all 0.3s ease-out;
+        }
+
+        .main_nav ul li:hover>a {
+            color: #FFAC00
+        }
+
+        .main_nav ul li i {
+            position: absolute;
+            right: 0;
+            top: 0.625em;
+            color: #001A91;
+        }
+
+        .main_nav ul li:hover>i {
+            color: #FFAC00
+        }
+
+        .main_nav ul ul {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 1em);
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+            pointer-events: none;
+        }
+
+        .main_nav ul ul li {
+            float: none;
+            margin: 0;
+            /* border-bottom: 1px solid #001A91; */
+            border: none;
+        }
+
+        .main_nav>ul>li>ul:after {
+            content: " ";
+            position: absolute;
+            bottom: 100%;
+            height: 1em;
+            width: 100%;
+            left: 0;
+        }
+
+        .main_nav ul ul ul {
+            left: 100%;
+            top: 0;
+        }
+
+        .main_nav ul li:hover>ul {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .main_nav ul ul li a {
+            background: rgb(240, 240, 240);
+        }
+
+        .main_nav ul li:hover ul li:hover>a {
+            color: #FFAC00;
+            background: rgb(240, 240, 240);
+            text-decoration: underline;
+        }
+
+        .main_nav ul ul li i {
+            transform: rotate(-90deg);
+        }
+
+        .main_nav ul ul li:hover i {
+            color: #FFAC00;
+        }
+
+        .head-for {
+            background-color: rgb(240, 240, 240);
+            padding: 0wm 2em;
+            /* position: fixed; */
+        }
+
+        .for {
+            background-color: rgb(240, 240, 240);
+            justify-content: right;
+        }
+
+        .forall span {
+            margin-left: 2em;
+        }
+
+        .forall ul {
+            /* margin-top: 300px; */
+            /* padding-right: 2em; */
+            width: 100%;
+            list-style: none;
+            display: flex;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .forall ul li {
+            list-style: none;
+            margin-left: 1em;
+            padding: 1em 1em 0em;
+            font-size: 1.1em;
+        }
+
+        .forall ul li a {
+            text-decoration: none;
+            color: #001A91;
+            transition: all 0.3s ease-out;
+        }
+
+        .forall ul li a:hover {
+            color: #FFAC00;
+        }
+
+        li.nav-hide {
+            display: none;
+        }
+
+        /*This Media Query use for iPad Portrait View*/
+        @media only screen and (min-width:768px) and (max-width:990px) {
+            .header {
+                position: fixed;
+                padding: 1em 1em;
+                z-index: 999;
+            }
+
+            .main_nav ul li {
+                margin: 0;
+                font-size: 1em;
+
+            }
+
+            .main_nav ul li a {
+                padding: 0.37em 1em;
+            }
+
+            /* .clear{
+            width: 100%;
+            height: 0em;
+        } */
+        }
+
+        @media screen and (min-width: 768px) {
+            .nav_ico,
+            #menuTrigger {
+                display: none;
+            }
+
+        }
+
+        /*This Media Query use for Mobile View*/
+        @media screen and (max-width: 870px) {
+            .header {
+                position: fixed;
+                padding: 1em 0em;
+                z-index: 999;
+            }
+
+            .nav_ico {
+                display: block;
+                position: relative;
+                z-index: 10;
+                color: #001A91;
+                font-size: 2.25em;
+            }
+
+            .main_nav {
+                margin-top: 1.8em;
+                position: fixed;
+                left: 0;
+                top: 4.2em;
+                padding: 0;
+                background: rgb(240, 240, 240);
+                z-index: 5;
+                height: calc(100vh - 74px);
+                overflow: auto;
+                width: calc(100% - 80px);
+                transition: all 0.3s ease-out;
+                transform: translateX(-100%);
+                z-index: 9999;
+            }
+
+            .main_nav ul li {
+                float: none;
+                margin: 0 !important;
+                padding: 0 !important;
+                border-bottom: 1px solid #a7abbe;
+
+            }
+
+            .main_nav ul li a {
+                display: block;
+                color: #001A91;
+                padding: 0.625em;
+
+            }
+
+            .main_nav>ul>li:hover>a {
+                background: rgb(240, 240, 240);
+                color: #FFAC00;
+            }
+
+            .main_nav ul ul {
+                position: static;
+                pointer-events: auto;
+                opacity: 1;
+                height: 0;
+                overflow: hidden;
+
+            }
+
+            .main_nav ul ul li a {
+                padding-left: 2em;
+            }
+
+            .main_nav ul ul ul li a {
+                padding-left: 4em;
+            }
+
+            .main_nav ul ul ul ul li a {
+                padding-left: 6em;
+            }
+
+            .main_nav ul li:hover>ul {
+                height: auto;
+            }
+
+            .main_nav ul li i {
+                right: 0.625em !important;
+                padding-left: 0.5em;
+            }
+
+            .main_nav ul li:hover>i {
+                color: #001A91;
+            }
+
+            .main_nav ul ul li i {
+                transform: rotate(0deg);
+            }
+
+            #menuTrigger {
+                opacity: 0;
+                position: fixed;
+                width: 0;
+                height: 0;
+                margin: 0
+            }
+
+            #menuTrigger:checked+.main_nav {
+                transform: translateX(0%);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-start-->
+    <header>
+        <div class="head-for">
+            <div class="for container-nav">
+                <nav class="forall">
+                    <ul>
+                        <li><a href="#">นักศึกษา</a><span>|</span></li>
+                        <li><a href="#">บุคลากร</a><span>|</span></li>
+                        <li><a href="#">ศิษย์เก่า</a><span>|</span></li>
+                        <li><a href="#">ผู้เยี่ยมชม</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container-nav">
+                <div class="header_left">
+                    <a class="logo" href="index.html"><img src="../img/logo.png" alt="logo" width="200px"></a>
+                </div>
+                <div class="header_right">
+                    <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+                    <input id="menuTrigger" type="checkbox" name="">
+                    <nav class="main_nav">
+                        <ul>
+                            <li><a class="move" href="#">หน้าหลัก</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#">ผู้บริหารและกรรมการ</a></li>
+                                    <li><a href="#">ประวัติ</a></li>
+                                    <li><a href="#">บุคลกรและเจ้าหน้าที่</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">การศึกษา</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#">หลักสูตร</a>
+                                        <i class="fa fa-caret-down"></i>
+                                        <ul>
+                                            <li><a href="#">ปริญญาตรี</a></li>
+                                            <li><a href="#">ปริญญาโท</a></li>
+                                            <li><a href="#">ปริญญาเอก</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">ปฏิทินการศึกษา</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ข่าวสาร</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#">ข่าวเด่น</a></li>
+                                    <li><a href="#">ข่าวทั่วไป</a></li>
+                                    <li><a href="#">ความร่วมมือ MOU</a></li>
+                                    <li><a href="#">งานวิจัย</a></li>
+                                    <li><a href="#">ข่าวรับสมัครงาน</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">การรับสมัคร</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#">การรับสมัครปริญญาตรี</a></li>
+                                    <li><a href="#">การรับสมัครปริญญาโท</a></li>
+                                    <li><a href="#">การรับสมัครปริญญาเอก</a></li>
+                                    <li><a href="#">ทุนการศึกษา</a></li>
+                                    <li><a href="#">ค่าเล่าเรียน</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ติดต่อ</a></li>
+                            <li class="nav-hide">
+                                <a href="#">คุณคือใคร</a>
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="#">นักศึกษา</a></li>
+                                    <li><a href="#">บุคลากร</a></li>
+                                    <li><a href="#">ศิษย์เก่า</a></li>
+                                    <li><a href="#">ผู้เยี่ยมชม</a></li>
+                                </ul>
+                            </li>
+                            <li class="tran"><a class="media-first" href="#"> EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header-end-->
+</body>
+
+</html>
